@@ -15,6 +15,7 @@
 	along with FreeIntv.  If not, see http://www.gnu.org/licenses/
 */
 #include <math.h>
+#include <stdio.h>
 #include "controller.h"
 #include "memory.h"
 
@@ -108,7 +109,12 @@ int getControllerState(int joypad[], int player)
 	if(joypad[4]!=0) { state |= B_LEFT; } // 0x9F - Button Left
 	if(joypad[5]!=0) { state |= B_RIGHT; } // 0x3F - Button Right
 
-	if(joypad[6]!=0) { state |= getQuickKeypadState(player); }
+	if(joypad[6]!=0) 
+	{ 
+	    //fprintf(stdout, "[contoller.c] [getControllerState] Value of virtual keyboard: %d \n", getQuickKeypadState(player));
+	    state |= getQuickKeypadState(player); 
+	}
+
 
 	/* Analog Controls for 16-way disc control */
 
