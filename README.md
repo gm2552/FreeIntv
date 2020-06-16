@@ -1,42 +1,18 @@
-# FreeIntv
-FreeIntv is a libretro emulation core for the Mattel Intellivision designed to be compatible with joypads from the SNES era forward even if they originally required a number pad.
+# FreeIntv - - AtGames Legends Ultimate Mod
+Current release is v1.0.0.  It can be downloaded from [here].
 
-## Authors
+## Acknowledgements 
+Port of FreeIntv for libretro.  Includes mods specific to the AtGames Legends Ultimate gaming console.  Forked from original source found at https://github.com/libretro/FreeIntv
 
-FreeIntv was created by David Richardson.
+## Mods
 
-## License
-The FreeIntv core is licensed under GPLv3. More information at https://github.com/markwkidd/FreeIntv/blob/master/LICENSE.
+### Embedded Bios
 
-## BIOS
-FreeIntv requires two Intellivision BIOS files to be placed in the libretro 'system' folder:
+Generally the core requires bios files to be located within a specific folder accessible to the core.  This modded core embedds the bios files within to core itself removing the need to co-locate the bios files in another folder.
 
-| Function | Filename* | MD5 Hash |
-| --- | --- | --- | 
-| Executive ROM | `exec.bin`  | `62e761035cb657903761800f4437b8af` |
-| Graphics ROM | `grom.bin` | `0cd5946c6473e42e8e4c2137785e427f` |
+### Button Mapping
 
-* BIOS filenames are case-sensitive
+Intellivision controller buttons have been mapped to the following ALU buttons.  Note that the "X" button toggles the virtual keypad.  Once a button on the virutual keypad has been selected, use the Y button to invoke the selected keypad button.
 
-## Entertainment Computer System and Intellivoice
-FreeIntv does not currently support Entertainment Computer System (ECS) and Intellivoice functionality. Contributions to the code are welcome!
 
-## Controller overlays
-Mattel Intellivision games were often meant to be played with game-specific cards overlaid on the numeric keypad. These overlays convey information which can be very useful in gameplay. Images of a limited selection of Intellivision titles are available at: http://www.intellivisionlives.com/bluesky/games/instructions.shtml
-
-## Controls
-
-* **Mini-Keypad** - allows the user to view and select keys from a small Intellivision pad in the lower corner of the display.
-* **Controller Swap** - Some Intellivision games expect the left controller to be player one, others expect the right controller. This isn't a problem if you have two controllers (and don't mind juggling them) but users with only one controller or using a portable setup would be effectively locked out of some games. Controller Swap swaps the two controller interfaces so that the player does not have to physically swap controllers.
-
-| RetroPad | FreeIntv Function |
-| --- | --- |
-| D-Pad| 8-way movement |
-| Left Analog Stick | 16-way disc |
-| A | Left Action Button |
-| Y | Top Action Button |
-| X | Use the Last Selected Intellivision Keypad Button. In Astrosmash, for example, you can leave "3" selected to enable instant access to hyperspace. |
-| L/R | Activate the Mini-Keypad |
-| Start | Pause Game |
-| Select | Controller Swap |
 
