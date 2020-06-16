@@ -14,5 +14,4 @@ Generally the core requires bios files to be located within a specific folder ac
 
 Intellivision controller buttons have been mapped to the following ALU buttons.  Note that the "X" button toggles the virtual keypad.  Once a button on the virutual keypad has been selected, use the Y button to invoke the selected keypad button.
 
-
-
+![Buttons](FreeIntvControls.png)
