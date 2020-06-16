@@ -1,5 +1,5 @@
 # FreeIntv - - AtGames Legends Ultimate Mod
-Current release is v1.0.0.  It can be downloaded from [here].
+Current release is v1.0.0.  It can be downloaded from [here](https://github.com/gm2552/FreeIntv/releases/download/1.0.0/freeintv_libretro_alu_alpha-1.so).
 
 ## Acknowledgements 
 Port of FreeIntv for libretro.  Includes mods specific to the AtGames Legends Ultimate gaming console.  Forked from original source found at https://github.com/libretro/FreeIntv
